@@ -1,0 +1,643 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+   
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    z-index: 100;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.area-logo img {
+    width: 150px;
+    margin-top: 15px;
+}
+
+.menu {
+    margin-right: 10%;
+    float: right;
+}
+
+.menu nav {
+    margin-top: 1%;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+}
+nav {
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: blue;
+    height: 48px;
+    
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-family: arial;
+    height: 33px;
+    display: inline-block;
+    text-align: center;
+} 
+
+.menu li:hover {
+    background-color: darkblue;
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    padding-top: 15px;
+    text-transform: uppercase;
+    list-style-type: none;
+}
+
+
+.sub-menu{
+    position: absolute;
+    display: none;
+    background-color: blue;
+    z-index: 1;
+}
+
+.menu li:hover>ul {
+    display: block;
+    width: 150px;
+}
+
+.menu ul li:hover>ul {
+    display: block;
+    width: 150px;
+    margin-left: 150px;
+    margin-top: -48px;
+}
+
+form {
+    border: 1px solid aquamarine;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+form input, form button {
+    font-size: 1.2em;
+    border-radius: 0.2em;
+    border: none;
+    padding: 0.2em;
+}
+form button {
+    cursor: pointer;
+    background: none;
+    color: aquamarine;
+}
+form button:hover {
+    background-color: aquamarine;
+    color: blue;
+}
+
+.botao-nav button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+.botao-nav button:hover {
+    cursor: pointer;
+    background-color: darkblue;
+}
+.botao-nav button:focus ~ ul {
+    height: 250px;
+}
+section {
+    margin: 0 auto;
+}
+
+/* Pagina Inicial */
+
+.games {
+    width: 80%;
+    height: 350px;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    
+}
+
+.games .game{
+    width: 200px;
+    height: 400px;
+}
+
+.games .game img{
+    width: 100%;
+}
+
+.Produtos .PS5,
+.Produtos .DUALSENSE,
+.Produtos .Ratochato,
+.Produtos .Returnal,
+.Produtos .GowRag,
+.Produtos .Tlou1,
+.Produtos .Saintsrow,
+.Produtos .TheQuarry {
+    color: blue;
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    font-size: 15px;
+}
+
+
+.Produtos h1 {
+    color: darkblue;
+    padding: 30px;
+    /* left: 100px; */
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    padding: 90px;
+}
+.game {
+    position: relative;
+}
+
+.game p {
+    color: darkblue;
+}
+.game a {
+    color: darkblue;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Pagina Login */
+
+.area-login {
+    display: flex;
+    height: 510px;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 550px;
+    position: center;
+    margin: 0 auto;
+}
+.login {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 320px;
+    padding: 35px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.login input {
+    margin-top: 10px;
+    border: none;
+    height: 45px;
+    outline: none;
+    border-radius: 8px;
+}
+.login img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    font-size: 14px;
+
+}
+form [type="submit"] {
+    background-color: aquamarine;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: blue;
+}
+.login p {
+    color: white;
+}
+.login a {
+    color: aquamarine;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Pagina Cadastro */
+
+.area-cadastro {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    top: 200px;
+    left: 550px;
+    position: center;
+}
+.cadastro {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 355px;
+    height: 435px;
+    padding: 35px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.cadastro form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cadastro input {
+    margin-top: 10px;
+    border: none;
+    height: 40px;
+    outline: none;
+    border-radius: 8px;
+}
+.cadastro img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 20px;
+}
+input::placeholder {
+    font-size: 14px;
+
+}
+form [type="submit"] {
+    background-color: aquamarine;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: blue;
+}
+
+
+/* Produtos Pag. Inicial */
+
+.imagem {
+    width: 450px;
+    height:450px;
+    padding: 90px;
+    
+}
+
+.nomeproduto{
+    left: 630px;
+    top: 150px;
+    position: absolute;
+    color: black;
+    margin-top: 50px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.descrição{
+    left: 630px;
+    top: 180px;
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.valorproduto {
+    left: 630px;
+    top: 350px;
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  
+}
+.botaocomprar form {
+    border: none;
+    left: 625px;
+    top: 490px;
+    position: absolute;
+    margin-top: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+.botaocomprar form [type="submit"] {
+    background-color: blue;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 300px;
+    height: 50px;
+}
+
+/* Pagina Quem somos */
+
+.imagemloja {
+    width: 450px;
+    height:450px;
+    padding: 90px;
+    
+}
+
+.nomeloja {
+    left: 630px;
+    top: 150px;
+    position: absolute;
+    color: black;
+    margin-top: 50px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.descricaoloja {
+    left: 630px;
+    top: 180px;
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+.localizacao {
+    left: 630px;
+    top: 350px;
+    position: absolute;
+    color: black;
+    margin-top: 100px;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+  
+}
+
+/* footer */
+
+.whatsapp{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-image: url("whatsapp3.img");
+    background-size: contain;
+    z-index: 1;
+}
+
+.texto-footer{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+footer{
+    background:darkblue;
+    width: 100%;
+    height: 50px;
+    position: static;
+    bottom: 0;
+    left: 0;
+   }
+
+@media (max-width: 400px) 
+{
+    body {
+        height: 100%
+    }
+    html {
+        height: 100%
+    }
+    footer{
+        position: fixed;
+    }
+    .games {
+        height: 80%;
+    }
+    nav {
+        height: 130px;
+    }
+    .menu {
+        margin-right: 10%;
+        float: right;
+    }
+    ul {
+        overflow: hidden;
+        transition: all .5s;
+    }
+    .menu nav {
+        margin-top: 1%;
+        margin: 0 auto;
+        display: inline-block;
+        padding: 15px;
+        font-size: 10px;
+        font-weight: 100;
+        text-transform: uppercase;
+        color: white;
+    }
+    .menu a {
+        text-decoration: none;
+        color: white;
+        font-family: arial;
+        height: 27px;
+        display: inline-block;
+        text-align: center;
+    } 
+    
+    .menu li:hover {
+        background-color: darkblue;
+        display: inline-block;
+    }
+    
+    .menu li {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+        padding-top: 15px;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+    
+    
+    .sub-menu{
+        position: absolute;
+        display: none;
+        background-color: blue;
+        z-index: 1;
+    }
+    
+    .menu li:hover>ul {
+        display: block;
+        width: 150px;
+    }
+    
+    .menu ul li:hover>ul {
+        display: block;
+        width: 150px;
+        margin-left: 150px;
+        margin-top: -48px;
+    }
+    .container {
+        width: 350px;
+    }
+    form {
+        margin-top: 10px;
+        width: 130px;
+    }
+    form input {
+        width: 120px;
+    }
+    form button {
+        width: 130px;
+        margin-top: 5px;
+    }
+    .Produtos h1 {
+        height: 1px;
+    }
+    /* Pagina login */
+    .login {
+        width: 100%;
+        height: 300px;
+        border: 15px;
+        border-color: darkblue;
+    }
+    .area-login {
+        height: 400px;
+    }
+    .login form {
+        width: 300px;
+    }
+    .login input {
+        width: 290px;
+    }
+    .login form [type="submit"] {
+        width: 299px;
+    }
+    /* Pagina cadastro */
+    .cadastro {
+        width: 100%;
+        height: 500px;
+        border: 15px;
+        border-color: darkblue;
+    }
+    .area-cadastro {
+        height: 600px;
+    }
+    .cadastro form {
+        width: 300px;
+    }
+    .cadastro input {
+        width: 290px;
+    }
+    .cadastro form [type="submit"] {
+        width: 299px;
+    }
+
+    /* Pagina produtos */
+
+    .imagem {
+        position: absolute;
+        top: 400px;
+        padding: 0;
+        left: 40px; 
+        width: 300px;
+        height: 300px;       
+    }
+    .nomeproduto {
+        top: 230px;
+        left: 125px;
+    }
+    .descrição {
+      top: 750px;
+      color: black;
+      left: 5px;
+    }
+    .valorproduto {
+        top: 700px;
+        left: 110px;
+    }
+    .botaocomprar{
+        display: none;
+    }
+    .botaocomprar form [type="submit"] {
+        display: none;
+    }
+    .informações {
+        height: 1100px;
+    }
+    /* Pagina quem somos */
+
+    .imagemloja {
+        position: absolute;
+        top: 400px;
+        padding: 0;
+        left: 40px; 
+        width: 300px;
+        height: 300px;       
+    }
+    .nomeloja {
+        top: 230px;
+        left: 125px;
+    }
+    .descricaoloja {
+      top: 780px;
+      color: black;
+      left: 5px;
+    }
+    .localizacao {
+      top: 650px;
+      left: 40px;
+    }
+    .informações {
+        height: 1100px;
+    }
+    .informaçõesloja {
+        height: 850px;
+    }
+    .whatsapp {
+        display: none;
+    }
+
+}
